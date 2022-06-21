@@ -1,0 +1,169 @@
+<div class="bg-danger main  text-center "><br>
+<p class="fs-3 text-white ">
+    Hedomy.net The first free portal for new and used clothes
+</p>
+</div>
+<!-- the icons div -->
+<div class="container text-center mt-2">
+    <div class="row">
+        <div class="col-lg-1 px-1  col-sm-3">
+            <a href="#">
+                <img src="assets/home/location.PNG" alt="pictuer">
+                <p>
+          Pets & Animals
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1  col-sm-3">
+            <a href="#">
+                <img src="assets/home/photographer.PNG" alt="picture">
+                <p>
+                    Photographer
+                </p>
+            </a>
+            
+        </div>
+        <div class="col-lg-1 px-1  col-sm-3">
+            <a href="#" >
+                <img src="assets/home/services.PNG" alt="picture">
+                <p>
+                    Services
+                </p>
+            </a>
+
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/tailor.PNG" alt="picture">
+                <p>
+                    Tailoring
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-md-3">
+            <a href="#" >
+                <img src="assets/home/watches.PNG" alt="picture">
+                <p>
+                    Watches
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/dress.PNG" alt="picture">
+                <p>
+                    Clothes
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/shoes.PNG" alt="picture">
+                <p>
+                    Bags & Shoes
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/accessories.PNG" alt="picture">
+                <p>
+                    Accessories
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/cosmatics.PNG" alt="picture">
+                <p>
+                    Cosmatics
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/eyeglasses.PNG" alt="picture">
+                <p>
+                    Eye glasses
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/furniture.PNG" alt="picture">
+                <p>
+                    Furniture
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-1 px-1 col-sm-3">
+            <a href="#" >
+                <img src="assets/home/handmade.PNG" alt="picture">
+                <p>
+                    Hand Made 
+                </p>
+            </a>
+        </div>
+        
+        
+    </div>
+</div>
+
+<!-- the next div -->
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 position-relative nxt-div">
+            <div class="shadow">
+
+            </div>
+            <img src="assets/home/two.jpg" class=" w-100" alt="picture">
+            <h3 class="position-absolute title">Clothes</h3>
+        </div>
+        <div class="col-lg-4 col-md-12 position-relative nxt-div">
+            <div class="shadow">
+
+            </div>
+            <img src="assets/home/three.jpg" class=" w-100" alt="picture">
+            <h3 class="position-absolute title">Bags & Shoes</h3>
+        </div>
+        <div class="col-lg-4 col-md-12 position-relative nxt-div">
+            <div class="shadow ">
+
+            </div>
+            <img src="assets/home/four.jpg" class=" w-100" alt="picture">
+            <h3 class="position-absolute title">Accessories</h3>
+        </div>
+        
+    </div>
+</div><br><br>
+
+<!-- the data from api  -->
+
+<!-- <p class="">Product</p> -->
+
+<div class="container ">
+    <p>
+        New items 
+    </p>
+    <div class="row">
+        <div class="col-lg-3 col-md-12 justify-content-center p-2" *ngFor="let y of parts">
+
+            <div class="card bg-light fw-bolder" style="width: 16rem;" >
+                <img [src]="y.image" class="card-img-top p-3 vh-50 w-100" alt="picture">
+                <div class="card-body">
+                  <p class="card-title text-danger">{{y.title}}</p>
+                  <p class="card-text">Price : {{y.price}}</p>
+                  <p>Category : {{y.category}}</p>
+                  <span class="p-2">rate : {{y.rating.rate}}</span>
+                  <span class="p-2">Stock : {{y.rating.count}}</span>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+ 

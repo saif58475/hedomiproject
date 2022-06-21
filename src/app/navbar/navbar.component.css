@@ -1,0 +1,8 @@
+*{
+    color: black;
+}
+#navbar li:hover{
+    border-bottom: 3px solid black;
+    
+}
+

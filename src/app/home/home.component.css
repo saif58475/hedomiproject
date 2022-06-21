@@ -1,0 +1,55 @@
+.main{
+    background-image: url('../../assets/home/one.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+a p{
+    font-size: 0.7em;
+}
+.nxt-div{
+    cursor: pointer;
+}
+.nxt-div:hover .title{
+    top: 50%;
+    left: 20%;
+    transition: 2s ease-out;
+    
+    
+}
+.title{
+    top: 60%;
+    left: 10%;
+    color: white;
+    font-weight: bold;
+    transform: scaleX(1);
+}
+.shadow{
+    content: ' ';
+    position: absolute;
+    width: 94%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* the media query */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+    .shadow{
+        content: ' ';
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+  }
+  
