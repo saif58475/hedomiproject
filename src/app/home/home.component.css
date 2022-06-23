@@ -59,6 +59,44 @@ a p{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     }
+    .onpicture{
+        position: absolute;
+        bottom: -11%;
+        right: 2%;
+        left: 0%;
+        background:#e6b8ff ;
+        opacity: 0.4;
+        height: 30%;
+        transition: 1.5s ease-in;
+    }
+    #oneofone:hover .onpicture{
+        bottom: 10%;
+        
+    }
     
   }
   
+#oneofone{
+    background-image: url('../../assets/toplocations/first.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.onpicture{
+    position: absolute;
+    bottom: -11%;
+    right: 0%;
+    left: 0%;
+    background:#e6b8ff ;
+    opacity: 0.4;
+    height: 30%;
+    transition: 1s ease-in;
+}
+#oneofone:hover .onpicture{
+    bottom: 10%;
+    
+}
+#twoofone{
+    background-image: url('../../assets/toplocations/second.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
